@@ -23,7 +23,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findViewById<View>(R.id.button_scanner).setOnClickListener { v: View? -> mainPresenter.clickToScanner() }
-        findViewById<View>(R.id.button_at).setOnClickListener { v: View? -> mainPresenter.clickToAntiTheft() }
+        findViewById<View>(R.id.button_scanner).setOnClickListener { mainPresenter.clickToScanner() }
+        findViewById<View>(R.id.button_at).setOnClickListener { mainPresenter.clickToAntiTheft() }
     }
 }
