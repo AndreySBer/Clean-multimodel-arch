@@ -1,31 +1,6 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    id("android-application-convention")
     kotlin("kapt")
-}
-
-android {
-    compileSdkVersion(rootProject.extra["compileSdkVersion"] as Int)
-
-    defaultConfig {
-        minSdkVersion(rootProject.extra["minSdkVersion"] as Int)
-        targetSdkVersion(rootProject.extra["compileSdkVersion"] as Int)
-        versionCode = 1
-        versionName = "1.0"
-    }
-
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"))
-            proguardFiles("proguard-rules.pro")
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
 }
 
 dependencies {
@@ -38,7 +13,7 @@ dependencies {
     implementation(project(":feature-scanner"))
     implementation(project(":feature-purchase-api"))
 
-    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation("androidx.appcompat:appcompat:1.3.0-rc01")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     // RxJava
     val rxJava = rootProject.extra["rxJava_version"]
