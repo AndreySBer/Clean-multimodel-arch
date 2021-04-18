@@ -20,9 +20,9 @@ internal class ScannerActivity : AppCompatActivity() {
     private lateinit var navigator: Navigator
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         ScannerFeatureComponentHolder.getComponent().inject(this)
         navigator = SupportAppNavigator(this, supportFragmentManager, R.id.details)
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scanner)
         if (savedInstanceState == null) {
             router.navigateTo(SCANNER_MAIN)

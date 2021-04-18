@@ -20,9 +20,9 @@ internal class AntitheftActivity : AppCompatActivity() {
     private lateinit var navigator: Navigator
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         AntitheftFeatureComponentHolder.getComponent().inject(this)
         navigator = SupportAppNavigator(this, supportFragmentManager, R.id.details)
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_antitheft)
         if (savedInstanceState == null) {
             router.navigateTo(AntitheftRoutingScreens.ANTITHEFT_MAIN)
