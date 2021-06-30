@@ -1,11 +1,11 @@
 
 buildscript {
-    val kotlin_version by extra("1.4.30")
-    val moxy_version by extra("2.1.2")
-    val dagger_version by extra("2.31.2")
-    val rxJava_version by extra("2.2.19")
-    val rxAndroid_version by extra("2.1.1")
-    val cicerone_version by extra("5.1.1")
+    val kotlin_version by extra("1.5.20")
+    val moxy_version by extra("2.2.2")
+    val dagger_version by extra("2.37")
+    val rxJava_version by extra("3.0.13")
+    val rxAndroid_version by extra("3.0.0")
+    val cicerone_version by extra("7.0")
 }
 
 allprojects {

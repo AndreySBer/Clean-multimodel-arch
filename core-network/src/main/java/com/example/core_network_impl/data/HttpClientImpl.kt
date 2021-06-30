@@ -1,7 +1,7 @@
 package com.example.core_network_impl.data
 
 import com.example.core_network_api.data.HttpClient
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

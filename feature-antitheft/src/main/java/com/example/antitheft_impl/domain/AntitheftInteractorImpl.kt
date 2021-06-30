@@ -2,7 +2,7 @@ package com.example.antitheft_impl.domain
 
 import com.example.antitheft_impl.domain.models.AntitheftModel
 import com.example.core.di.general.PerFeature
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

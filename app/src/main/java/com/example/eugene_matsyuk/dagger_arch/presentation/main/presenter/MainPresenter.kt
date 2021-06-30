@@ -4,9 +4,9 @@ import com.example.eugene_matsyuk.dagger_arch.di.DiConstants.GLOBAL
 import com.example.eugene_matsyuk.dagger_arch.presentation.main.view.MainView
 import com.example.eugene_matsyuk.dagger_arch.routing.GlobalScreenNames.AV_FEATURE
 import com.example.eugene_matsyuk.dagger_arch.routing.GlobalScreenNames.SCANNER_FEATURE
+import com.github.terrakok.cicerone.Router
 import moxy.InjectViewState
 import moxy.MvpPresenter
-import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 import javax.inject.Named
 

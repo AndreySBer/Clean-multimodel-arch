@@ -3,10 +3,10 @@ package com.example.eugene_matsyuk.dagger_arch.routing
 import android.content.Context
 import com.example.antitheft_api.AntitheftFeatureApi
 import com.example.scanner_api.ScannerFeatureApi
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.Screen
-import ru.terrakok.cicerone.commands.Command
-import ru.terrakok.cicerone.commands.Forward
+import com.github.terrakok.cicerone.Command
+import com.github.terrakok.cicerone.Navigator
+import com.github.terrakok.cicerone.Forward
+import com.github.terrakok.cicerone.Screen
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
@@ -17,7 +17,7 @@ class GlobalNavigator @Inject constructor(
         private val featureAntitheft: Provider<AntitheftFeatureApi>,
         private val context: Context
 ) : Navigator {
-    override fun applyCommands(commands: Array<Command>) {
+    override fun applyCommands(commands: Array<out Command>) {
         for (command in commands) {
             applyCommand(command)
         }
@@ -49,4 +49,5 @@ class GlobalNavigator @Inject constructor(
             else -> throw RuntimeException("Unexpected screen: $name")
         }
     }
+
 }
