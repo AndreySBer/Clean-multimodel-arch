@@ -14,9 +14,9 @@ include(":module-injector")
 pluginManagement {
 
     repositories {
+        gradlePluginPortal()
         google()
-        jcenter()
-        maven("https://dl.bintray.com/kotlin/kotlin-dev/")//for kapt plugin 1.4.30
+        mavenCentral()
     }
 
     resolutionStrategy {
@@ -24,9 +24,7 @@ pluginManagement {
             val pluginId = requested.id.id
 
             if (pluginId.startsWith("org.jetbrains.kotlin")) {
-                useVersion("1.4.30")
-            } else if (pluginId.startsWith("com.android.")) {
-                useModule("com.android.tools.build:gradle:4.1.2")
+                useVersion("1.5.20")
             }
         }
     }
@@ -36,6 +34,6 @@ dependencyResolutionManagement {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }

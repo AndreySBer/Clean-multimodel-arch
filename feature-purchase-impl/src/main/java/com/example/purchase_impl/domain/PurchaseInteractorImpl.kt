@@ -3,7 +3,7 @@ package com.example.purchase_impl.domain
 import com.example.core.di.general.PerFeature
 import com.example.purchase_api.domain.PurchaseInteractor
 import com.example.purchase_api.domain.models.PurchaseModel
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

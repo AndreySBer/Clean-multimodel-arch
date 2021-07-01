@@ -6,7 +6,7 @@ import com.example.core_db_api.data.DbClient
 import com.example.core_network_api.data.HttpClient
 import com.example.scanner_impl.domain.ScannerRepository
 import com.example.scanner_impl.domain.models.ScannerModel
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 @PerFeature

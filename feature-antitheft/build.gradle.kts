@@ -12,7 +12,7 @@ dependencies {
 
     implementation(project(":feature-purchase-api"))
 
-    implementation("androidx.appcompat:appcompat:1.3.0-rc01")
+    implementation("androidx.appcompat:appcompat:1.3.0")
     // dagger
     val dagger = rootProject.extra["dagger_version"]
     compileOnly("javax.annotation:jsr250-api:1.0")
@@ -21,8 +21,8 @@ dependencies {
     // RxJava
     val rxJava = rootProject.extra["rxJava_version"]
     val rxAndroid = rootProject.extra["rxAndroid_version"]
-    implementation("io.reactivex.rxjava2:rxjava:$rxJava")
-    implementation("io.reactivex.rxjava2:rxandroid:$rxAndroid")
+    implementation("io.reactivex.rxjava3:rxjava:$rxJava")
+    implementation("io.reactivex.rxjava3:rxandroid:$rxAndroid")
     // moxy
     val moxy = rootProject.extra["moxy_version"]
     implementation("com.github.moxy-community:moxy:$moxy")
@@ -30,5 +30,5 @@ dependencies {
     kapt("com.github.moxy-community:moxy-compiler:$moxy")
     // cicerone
     val cicerone = rootProject.extra["cicerone_version"]
-    implementation("ru.terrakok.cicerone:cicerone:$cicerone")
+    implementation("com.github.terrakok:cicerone:$cicerone")
 }

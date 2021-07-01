@@ -30,10 +30,10 @@ dependencies {
     val rxAndroid = rootProject.extra["rxAndroid_version"]
 
 
-    implementation("androidx.appcompat:appcompat:1.3.0-rc01")
+    implementation("androidx.appcompat:appcompat:1.3.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     // cicerone
-    implementation("ru.terrakok.cicerone:cicerone:$cicerone")
+    implementation("com.github.terrakok:cicerone:$cicerone")
     // dagger
     compileOnly("javax.annotation:jsr250-api:1.0")
     implementation("com.google.dagger:dagger:$dagger")
@@ -43,6 +43,6 @@ dependencies {
     implementation("com.github.moxy-community:moxy-androidx:$moxy")
     kapt("com.github.moxy-community:moxy-compiler:$moxy")
     // RxJava
-    implementation("io.reactivex.rxjava2:rxjava:$rxJava")
-    implementation("io.reactivex.rxjava2:rxandroid:$rxAndroid")
+    implementation("io.reactivex.rxjava3:rxjava:$rxJava")
+    implementation("io.reactivex.rxjava3:rxandroid:$rxAndroid")
 }

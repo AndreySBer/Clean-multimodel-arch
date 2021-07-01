@@ -2,7 +2,7 @@ package com.example.scanner_impl.domain
 
 import com.example.core.di.general.PerFeature
 import com.example.scanner_impl.domain.models.ScannerModel
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
